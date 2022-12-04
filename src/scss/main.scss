@@ -1,3 +1,6 @@
-body{
-    background: #000;
-}
+@use "./base/fonts";
+@use "./abstracts/variables";
+@use "./base/default";
+@use "./base/container";
+@use "./pages/home";
+

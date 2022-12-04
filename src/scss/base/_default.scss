@@ -12,7 +12,13 @@ body {
     flex-direction: column;
     height: 100%;
     margin: 0;
+    font-family: "Oswald";
     scroll-behavior: smooth;
+    color: #fff;
+    background-image: url("../assets/clouds-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 img {
@@ -28,6 +34,10 @@ ul {
 a{
     display: inline-block;
     text-decoration: none;
+}
+
+h1,h2,h3,h4,p{
+    margin-block:0;
 }
 
 

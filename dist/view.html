@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- script -->
+    <!-- <script src="../js/app.js" type="module" defer></script> -->
+    <script src="../js/script.js" type="module" defer></script>
+
+    <base href="/">
+</head>
+
+<body>
+    <main class="site-main">
+        <section class="site-wrapper">
+            <section class="intro">
+                <div class="container">
+                    <div class="intro__wrapper">
+                        <div class="intro__inner daily-weather" id="dailyWeather">
+                            <img class="daily-weather__img" id="dailyWeatherImg" src="../assets/svg_icons/clear-day.svg"
+                                alt="clear day">
+                            <div class="daily-weather__wrapper">
+                                <p class="daily-weather__text" id="dailyWeatherType">Fog</p>
+                                <p class="daily-weather__location" id="dailyWeatherLocation">Khulna City</p>
+                                <h3 class="daily-weather__level" id="dailyWeatherLevel">28 C</h3>
+                            </div>
+                        </div>
+                        <form class="intro__form" id="searchForm">
+                            <input class="intro__input" id="searchInput" type="search" placeholder="search">
+                        </form>
+                        <div class="intro__outer daily-info">
+                            <ul class="daily-info__list">
+                                <li class="daily-info__item daily-info__item--humidity">
+                                    <h4 class="daily-info__heading">Humidity</h4>
+                                    <p class="daily-info__text" id="dailyHumidity">50%</p>
+                                </li>
+                                <li class="daily-info__item daily-info__item--pressure">
+                                    <h4 class="daily-info__heading">Air Pressure</h4>
+                                    <p class="daily-info__text" id="dailyAirPressure">1009.483 PS</p>
+                                </li>
+                                <li class="daily-info__item daily-info__item--chance">
+                                    <h4 class="daily-info__heading">Chance of rain</h4>
+                                    <p class="daily-info__text" id="dailyChanceOfRain">0%</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="weather">
+                <div class="container">
+                    <ul class="weather__list" id="weatherList">
+
+
+
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- templates -->
+    <template id="weatherTemplate">
+        <li class="weather__item current">
+            <time class="weather__time" id="weatherTime" datetime="2022-12-02">
+                3PM
+            </time>
+            <p class="weather__day" id="weatherDay">Monday</p>
+            <h4 class="weather__level" id="weatherListLevel">28 C</h4>
+            <p class="weather__description" id="weatherDescription"></p>
+        </li>
+    </template>
+</body>
+
+
+
+</html>

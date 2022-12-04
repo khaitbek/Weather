@@ -1,0 +1,115 @@
+.site-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.intro{
+    margin-bottom: 5rem;
+}
+
+.intro__wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,300px));
+    justify-content: space-between;
+}
+
+.daily-weather__img{
+    width: 100px;
+    max-width: 100%;
+}
+.daily-weather__wrapper{
+    padding-left: 1rem;
+}
+
+.daily-weather__text{
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.daily-weather__location{
+    margin: 0;
+}
+.daily-weather__level{
+    font-size: 3.5rem;
+}
+
+.intro__form{
+    padding-top: 30px;
+}
+
+.intro__input{
+    padding: 10px;
+    font-weight: 400;
+    font-family: inherit;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.daily-info__list{
+    display: grid;
+    gap: 1rem;
+}
+
+.daily-info__item{
+    position: relative;
+    padding-left: 80px;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        aspect-ratio: 1;
+        background-repeat: no-repeat;
+        background-size: cover ;
+    }
+}
+
+.daily-info__item--humidity::before{
+    background-image: url("../assets/svg_icons/humidity.svg");
+}
+
+.daily-info__item--pressure::before{
+    background-image: url("../assets/svg_icons/humidity.svg");
+}
+
+
+.daily-info__item--chance::before{
+    background-image: url("../assets/svg_icons/raindrops.svg");
+}
+
+.daily-info__heading{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.weather__list{
+    display: grid;
+    grid-auto-flow:column;
+    grid-auto-columns: 21%;
+    padding-inline: 1rem;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+}
+
+.weather__item{
+    display: grid;
+    place-items: center;
+    padding: .5rem 1rem;
+    background-color: rgba(0,0,0,0.6);
+    scroll-snap-align: start;
+}
+
+.weather__level{
+    padding-block: 2rem;
+    font-size: 2rem;
+}
+
+.weather__day{
+    font-size: 12px;
+}
